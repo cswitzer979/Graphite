@@ -1,0 +1,289 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*Above is a CSS "reset" block to get rid of the white space that comes up on the sides sometimes with coding rooms (although it's an issue with how chrome renders stuff). I found this paticular one on stackoverflow
+but there are versions out there that do the same thing available everywhere*/
+
+/* NAV BAR ------------------------------------------------------------------------------------------------------ */
+
+.nav {
+  top: 0%;
+  width: 100%;
+  position: fixed;
+  background-color: #F2EBBF;
+  
+}
+.container {
+  padding: 22px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F2EBBF;
+}
+.container ul li {
+  list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+    background-color: #F2EBBF;
+}
+.container ul li a:hover {
+  padding: 12px;
+  color: black;
+}
+.container ul li a {
+    
+  margin: 8px;
+  padding: 10px;
+  color: #fc0;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.active {
+  border-bottom: 2px solid #d0d7d9;
+}
+.container p{
+    
+margin-bottom: 16px;
+color: #fc0;
+font-weight: 700;
+font-size: 20px;
+}
+
+h1.b {font-family: "Sedgwick Ave Display", sans-serif;font-size: 2vw; text-shadow: 6px 6px #F3B562;
+}
+
+a.a
+{
+    font-family: "Sedgwick Ave", sans-serif;font-size: 2vw; text-shadow: 1px 1px #FFFFFF; padding: 5%;
+     display: block; 
+
+}
+
+a.b
+{
+    font-family: "Sedgwick Ave", sans-serif; 
+      margin: 8px;
+  padding: 10px;
+  color: #fc0;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  background-color: #F2EBBF;
+}
+
+li.a {list-style-type: disc;}
+
+li.b {
+
+      list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+ul.a {
+
+    list-style-position: inside;
+    font-family: "Sedgwick Ave", sans-serif;font-size: 2vw; text-shadow: 1px 1px #FFFFFF; padding: 5%;
+}
+hover {
+  padding: 12px;
+  color: #fc0;
+}
+
+ul.b{
+
+      list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+
+img
+{
+Padding: 15px;
+}
+
+h2.b {font-family: "Sedgwick Ave Display", sans-serif; font-size: 2vh; text-shadow: 6px 6px #469576; padding: 2vh;
+}
+
+h2.c {font-family: "Sedgwick Ave Display", sans-serif; font-size: 2vh; color: white; text-shadow: 6px 6px #4c3b51; padding: 2vh;
+}
+
+h2.d {font-family: "Sedgwick Ave Display", sans-serif; font-size: 2vh; color: white; text-shadow: 6px 6px #b74219; padding: 2vh;
+}
+
+h2.e{font-family: "Sedgwick Ave Display", sans-serif; font-size: 2vh; color: white; text-shadow: 6px 6px #de932e; padding: 2vh;
+}
+
+
+
+p {font-family: "Sedgwick Ave", sans-serif;font-size: 2vw; text-shadow: 1px 1px #FFFFFF; padding: 5%;
+}
+p.s{
+    padding: 0%;
+margin-bottom: 16px;
+margin-top: 1vh ;
+color: #fc0;
+font-weight: 700;
+font-size: 3vh;}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+svg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes looneytunes {
+  0% {clip-path: circle(0px);}
+  10% {clip-path: circle(0px);}
+  40% {clip-path: circle(100%);}
+  70% {clip-path: circle(100%);}
+  100% {clip-path: circle(0px);}
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+    animation-name: yarhar;
+  animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes yarhar {
+  0% {transform: scaleY(0);}
+  10% {transform: scaleY(1);}
+  85% {transform: scaleY(1);}
+  100% {transform: scaleY(0);}
+}
+
+.center2 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.centabox {
+  margin-top: 40vh;
+  width: 100%;
+  text-align: center;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {clip-path: circle(0px);}
+  10% {clip-path: circle(0px);}
+  40% {clip-path: circle(100%);}
+  70% {clip-path: circle(100%);}
+  100% {clip-path: circle(0px);}
+}
+
+.bgimg-1, .bgimg-1half, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position:  50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: .1px;
+  /*
+  padding-top: 50%;
+  padding-right: .1px;
+  padding-bottom: .1px;
+  padding-left: .1px;
+  box-sizing: border-box;
+  */
+}
+
+.bgimg-1 {
+  background: #F2EBBF;
+  min-height: 100vh;
+  
+}
+
+.bgimg-1half {
+  background: #F2EBBF;
+  min-height: 100vh;
+}
+
+
+
+
+.bgimg-2 {
+background-image: url('New Project (6).png');
+  min-height: 100px;
+  
+}
+
+.bgimg-3 {
+background-image: url('New Project (8).png');
+  min-height: 100px;
+  
+}
+
+.bgimg-4 {
+background-image: url('OrangeBack.png');
+  min-height: 100px;
+  
+}
+
+.bgimg-5 {
+background-image: url('GrandFinale.png');
+  min-height: 100px;
+  
+}
+
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+    
+
+
+    
+html, body {
+height: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+
+ }
+
