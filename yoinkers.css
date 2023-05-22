@@ -255,19 +255,19 @@ background-image: url('New Project (6).png');
 
 .bgimg-3 {
 background-image: url('New Project (8).png');
-  min-height: 100px;
+  min-height: 100vh;
   
 }
 
 .bgimg-4 {
 background-image: url('OrangeBack.png');
-  min-height: 100px;
+  min-height: 100vh;
   
 }
 
 .bgimg-5 {
 background-image: url('GrandFinale.png');
-  min-height: 100px;
+  min-height: 100vh;
   
 }
 
